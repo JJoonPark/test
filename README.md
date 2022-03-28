@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+[CodeByte를 통해서 봤던 React 코딩 문제를 연습!]
+
+1. 코드를 마주했을 때 state를 배열로 이용하면 좋겠다고 생각했지만 시간이 부족해서 구현하지 못함.
+2. 검사식을 잘못사용해서 헤맸던 기억. (a === b === c 이렇게 검사식을 세우면 (a === b) === c 로 확인하기 때문에 원하는 것 처럼 검사할 수 없었음 => a === "X" && b === "X && c === "Y" 와 같은 방법으로 해야 함.)
+3. 새롭게 구현해본 배열 state에서는 true 변수를 두고 곱해서 for문을 돌리도록 구현 함. (조금 더 낫지 않을까..?)

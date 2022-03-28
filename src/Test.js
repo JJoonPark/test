@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import Square from "./Square";
 
 const styles = {
-  width: "400px",
-  height: "400px",
+  width: "380px",
+  height: "380px",
   background: "black",
   paddingTop: "20px",
-};
-
-const styles2 = {
-  display: "flex",
+  display: "grid",
+  gridTemplateRows: "100px 100px 100px",
+  gridTemplateColumns: "100px 100px 100px",
+  gap: "20px",
 };
 
 const styles3 = {
@@ -17,8 +17,6 @@ const styles3 = {
   fontSize: "2rem",
 };
 const styles4 = {
-  width: "100px",
-  height: "70px",
   color: "white",
   background: "black",
   fontSize: "2rem",
@@ -92,75 +90,69 @@ export default function Test() {
   return (
     <>
       <div style={styles}>
-        <div style={styles2}>
-          <Square
-            func={toggleInputPlayer}
-            player={player}
-            num={0}
-            plate={plate[0]}
-            isFinished={isFinished}
-          />
-          <Square
-            func={toggleInputPlayer}
-            player={player}
-            num={1}
-            plate={plate[1]}
-            isFinished={isFinished}
-          />
-          <Square
-            func={toggleInputPlayer}
-            player={player}
-            num={2}
-            plate={plate[2]}
-            isFinished={isFinished}
-          />
-        </div>
-        <div style={styles2}>
-          <Square
-            func={toggleInputPlayer}
-            player={player}
-            num={3}
-            plate={plate[3]}
-            isFinished={isFinished}
-          />
-          <Square
-            func={toggleInputPlayer}
-            player={player}
-            num={4}
-            plate={plate[4]}
-            isFinished={isFinished}
-          />
-          <Square
-            func={toggleInputPlayer}
-            player={player}
-            num={5}
-            plate={plate[5]}
-            isFinished={isFinished}
-          />
-        </div>
-        <div style={styles2}>
-          <Square
-            func={toggleInputPlayer}
-            player={player}
-            num={6}
-            plate={plate[6]}
-            isFinished={isFinished}
-          />
-          <Square
-            func={toggleInputPlayer}
-            player={player}
-            num={7}
-            plate={plate[7]}
-            isFinished={isFinished}
-          />
-          <Square
-            func={toggleInputPlayer}
-            player={player}
-            num={8}
-            plate={plate[8]}
-            isFinished={isFinished}
-          />
-        </div>
+        <Square
+          func={toggleInputPlayer}
+          player={player}
+          num={0}
+          plate={plate[0]}
+          isFinished={isFinished}
+        />
+        <Square
+          func={toggleInputPlayer}
+          player={player}
+          num={1}
+          plate={plate[1]}
+          isFinished={isFinished}
+        />
+        <Square
+          func={toggleInputPlayer}
+          player={player}
+          num={2}
+          plate={plate[2]}
+          isFinished={isFinished}
+        />
+        <Square
+          func={toggleInputPlayer}
+          player={player}
+          num={3}
+          plate={plate[3]}
+          isFinished={isFinished}
+        />
+        <Square
+          func={toggleInputPlayer}
+          player={player}
+          num={4}
+          plate={plate[4]}
+          isFinished={isFinished}
+        />
+        <Square
+          func={toggleInputPlayer}
+          player={player}
+          num={5}
+          plate={plate[5]}
+          isFinished={isFinished}
+        />
+        <Square
+          func={toggleInputPlayer}
+          player={player}
+          num={6}
+          plate={plate[6]}
+          isFinished={isFinished}
+        />
+        <Square
+          func={toggleInputPlayer}
+          player={player}
+          num={7}
+          plate={plate[7]}
+          isFinished={isFinished}
+        />
+        <Square
+          func={toggleInputPlayer}
+          player={player}
+          num={8}
+          plate={plate[8]}
+          isFinished={isFinished}
+        />
       </div>
       <div style={styles3}>{`Player: ${player}`}</div>
       <div style={styles3}>{`Winner: ${winner}`}</div>
