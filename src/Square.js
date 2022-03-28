@@ -10,10 +10,10 @@ const styles = {
   color: "green",
 };
 
-export default function Square({ player, func }) {
+export default function Square({ func, player, num, plate, isFinished }) {
   return (
-    <div style={styles} onClick={() => func()}>
-      {player}
+    <div style={styles} onClick={() => func(player, num, isFinished)}>
+      {plate}
     </div>
   );
 }
